@@ -349,11 +349,6 @@
 	background-size: contain;
 	}
 
-.albumsColumn {
-	display: flex;
-	flex-direction: column;
-	}
-
 .albumSlider-arrow {
 	position: absolute;
 	border: none;
