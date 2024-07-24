@@ -1,0 +1,452 @@
+#albumSelect {
+	width: calc(95% - 4px);
+	height: 70px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	z-index: 994;
+	cursor: pointer;
+	}
+
+#albumSelect:hover ~ .activeAlbum {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#albumSelect:hover ~ #moreAlbums {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
+	}
+
+#albumSelect1,
+#albumSelect2,
+#albumSelect3,
+#albumSelect4 {
+	width: calc(100% - 4px);
+	height: 70px;
+	position: relative;
+	z-index: 990;
+	cursor: pointer;
+	border: 1px solid #2D2D2D;
+	margin-bottom: 4px;
+	}
+
+#albumSelect1:hover,
+#albumSelect2:hover,
+#albumSelect3:hover,
+#albumSelect4:hover {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#albumSelect1:hover #albumCover1 {
+	opacity: 1;
+	}
+
+#albumSelect2:hover #albumCover2 {
+	opacity: 1;
+	}
+
+#albumSelect3:hover #albumCover3 {
+	opacity: 1;
+	}
+
+#albumSelect4:hover #albumCover4 {
+	opacity: 1;
+	}
+
+.album {
+	visibility: hidden;
+	}
+	
+.activeAlbum {
+	visibility: visible !important;
+	color: #D9974B;
+	}
+
+.play {
+	visibility: visible;
+	}
+
+#album1,
+#album2,
+#album3,
+#album4 {
+	width: calc(95% - 4px);
+	height: 362px;
+	margin: auto;
+	position: absolute;
+	top: 92px;
+	z-index: 980;
+	}
+
+#moreAlbums {
+	width: 70px;
+	height: 70px;
+	background: url(https://insanechronos.github.io/sventoyar/assets/svg/arrow-2.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	z-index: 995;
+	cursor: pointer;
+	}
+
+#moreAlbums:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
+	}
+
+#moreAlbums:hover ~ .activeAlbum {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#moreAlbums:hover ~ #albumSelect4 {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#moreAlbums:hover ~ .albumCover {
+	opacity: 1 !important;
+	}
+
+#moreAlbums:hover ~ #albumSelect4 #albumCover4 {
+	opacity: 1 !important;
+	}
+
+.albumCover {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 20px;
+	opacity: .25;
+	}
+
+.albumCover:hover {
+	opacity: 1;
+	}
+
+.activeCover {
+	opacity: 1 !important;
+	}
+
+#albumCover1 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/legends-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover2 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/strength-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover3 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/unity-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover4 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/ethnix-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumTitle {
+	float: left;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+#albumTitle p {
+	margin: 0;
+	font-size: 12px;
+	}
+
+#albumEnTitle3,
+#albumEnTitle2,
+#albumEnTitle1 {
+	color: #6F6F6F;
+	margin-top: -10px !important;
+	}
+
+#albumSelect3:hover #albumTitle #albumEnTitle3,
+#albumSelect2:hover #albumTitle #albumEnTitle2,
+#albumSelect1:hover #albumTitle #albumEnTitle1 {
+	color: #D9974B !important;
+	}
+
+#cover1 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/legends-cover.jpg) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#cover2 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/strength-cover.jpg) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#cover3 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/unity-cover.jpg) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#cover4 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/ethnix-cover.jpg) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#discs {
+	width: 50%;
+	height: 362px;
+	display: flex;
+	justify-content: center;
+	float: left;
+	}
+
+.discs-m {
+	width: 100% !important;
+	float: none !important;
+	position: relative;
+	top: -20px;
+	}
+
+#disc1 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/strength-cd.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#disc2 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/strength-cd.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#disc3 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/strength-cd.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#disc4 {
+	background: url(https://insanechronos.github.io/sventoyar/assets/cd/ethnix-cd.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#buyCD {
+	width: 298px;
+	height: 40px;
+	color: #7D7D7D;
+	font-size: 15px;
+	font-family: "Magistral";
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	line-height: 40px;
+	background: transparent;
+	border: 1px solid #7D7D7D;
+	position: relative;
+	top: 340px;
+	}
+
+.buyLink {
+	display: contents;
+	}
+
+.buyLink:hover {
+	cursor: pointer;
+	}
+
+.buyLink:hover #cover1,
+.buyLink:hover #cover2,
+.buyLink:hover #cover3,
+.buyLink:hover #cover4 {
+	margin-right: 150px;
+	}
+
+.buyLink:hover #disc1,
+.buyLink:hover #disc2,
+.buyLink:hover #disc3,
+.buyLink:hover #disc4 {
+	margin-left: 150px;
+	transform: rotate(25deg);
+	}
+
+.buyLink:hover #buyCD {
+	color: #000;
+	background: #D9974B;
+	border: 1px solid #D9974B;
+	}
+
+.CD {
+	width: 300px;
+	height: 300px;
+	background: #000;
+	position: absolute;
+	top: 20px;
+	}
+
+#playlist {
+	width: 50%;
+	height: 362px;
+	float: right;
+	}
+
+.playlist-m {
+	width: 100% !important;
+	float: none !important;
+	position: relative;
+	top: 20px;
+	display: flex;
+	}
+
+#vk_playlist_-5724897_43873507,
+#vk_playlist_-5724897_43873467,
+#vk_playlist_-5724897_43873451,
+#vk_playlist_-5724897_43873508 {
+	width: 100% !important;
+}
+
+#vk_playlist_-5724897_43873507 iframe,
+#vk_playlist_-5724897_43873467 iframe,
+#vk_playlist_-5724897_43873451 iframe,
+#vk_playlist_-5724897_43873508 iframe {
+	width: 100% !important;
+}
+
+#albumBuy {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	position: relative;
+	top: 120px;
+	}
+
+#albumBuy h2 {
+	width: 100%;
+	position: absolute;
+	top: -25px;
+	margin: 0;
+	}
+
+#albumSlide-prev {
+	width: 20px;
+	height: 100px;
+	background: url(https://insanechronos.github.io/sventoyar/assets/svg/arrow-1.svg) center no-repeat;
+	background-size: contain;
+	transform: rotate(180deg);
+	}
+
+#albumSlide-next {
+	width: 20px;
+	height: 100px;
+	background: url(https://insanechronos.github.io/sventoyar/assets/svg/arrow-1.svg) center no-repeat;
+	background-size: contain;
+	}
+
+.albumsColumn {
+	display: flex;
+	flex-direction: column;
+	}
+
+.albumSlider-arrow {
+	position: absolute;
+	border: none;
+	cursor: pointer;
+	}
+
+.albumSlider-arrow:hover {
+  filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+}
+
+.albumSlider-arrow-prev {
+  left: 0;
+}
+
+.albumSlider-arrow-next {
+  right: 0;
+}
+
+.albumSlider-1,
+.albumSlider-2,
+.albumSlider-3,
+.albumSlider-4 {
+	width: calc(100% - 160px);
+	overflow-x: hidden;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	}
+
+.albumSlide-1,
+.albumSlide-2,
+.albumSlide-3,
+.albumSlide-4 {
+	height: 100px;
+	flex: 0 0 calc(25% - 0.25px);
+	aspect-ratio: 1;
+	flex-flow: column wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.albumSlider-m {
+	width: calc(100% - 80px) !important;
+	overflow-x: scroll;
+	}
+
+.albumSlide-m {
+	flex: 0 0 calc(100% - 0.25px) !important;
+	}
+
+.albumSlide-1 div,
+.albumSlide-2 div,
+.albumSlide-3 div,
+.albumSlide-4 div {
+	display: flex;
+	align-items: center;
+	}
+
+.albumSlide-1 div:hover,
+.albumSlide-2 div:hover,
+.albumSlide-3 div:hover,
+.albumSlide-4 div:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+.albumSlide-1 div:hover > img,
+.albumSlide-2 div:hover > img,
+.albumSlide-3 div:hover > img,
+.albumSlide-4 div:hover > img {
+	border: 1px solid transparent;
+	}
+
+.albumSlide-1 img,
+.albumSlide-2 img,
+.albumSlide-3 img,
+.albumSlide-4 img {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #7D7D7D;
+	border-radius: 50%;
+	padding: 15px;
+	margin-right: 10px;
+	overflow: visible;
+	}
+
+.albumSlide-1 a,
+.albumSlide-2 a,
+.albumSlide-3 a,
+.albumSlide-4 a {
+	font-size: 14px;
+	color: #7D7D7D;
+	font-family: "Magistral";
+	font-weight: 500;
+	font-style: normal;
+	}
